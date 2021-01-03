@@ -6,7 +6,8 @@ var hw = "Hello World";
 console.log(hw);
 
 app.get('/', (req, res) => {
-  res.send('Hello Express')
+  var indexPg = __dirname + "/views/index.html";
+  res.sendFile(indexPg)
 });
 
 
