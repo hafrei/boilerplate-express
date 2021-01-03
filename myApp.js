@@ -1,8 +1,8 @@
 var express = require('express');
 var app = express();
-
 var hw = "Hello World";
 
+app.use(express.static('public'));
 console.log(hw);
 
 app.get('/', (req, res) => {
